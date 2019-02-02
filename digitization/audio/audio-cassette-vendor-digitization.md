@@ -38,7 +38,11 @@ Tapes will be received in the same batches as they were originally shipped.
     * Check for at minimum an A-side file for each
   * Transfer copy of directory tree to the MediaVault NAS
     * `rsync -arv -p chmod=rwx ./ -e ssh "user@1.2.3.4:/path/to/mediavault/CLIR"`
-  * Make local copies on the project assistant computer for QC
+  * Make local copies on the project assistant computer
+    * Each preservation master file should come with a sidecar md5 checksum file
+    * Use a tool like [md5tool](https://github.com/cavpp/md5tool/blob/master/md5tool.py) to compare the local copy with the vendor-provided checksum
+    * We may end up using a similar script or simply calling `md5` on the files
+    * In any case, if any files transferred unsuccessfully locally, transfer them again
 * Any discrepancies between manifest and hard drive or shipping tote contents should be reported to staff and vendor immediately
 * Because we provided the vendor only with A-side details in the manifest, the project assistant may need to create new database records for additional events recorded on B-side
 
@@ -46,7 +50,7 @@ Tapes will be received in the same batches as they were originally shipped.
 * Run preservation master files against MediaConch policy (TBD..)
   * note any discrepancies and contact vendor immediately in cases where a transfer was not made with correct specs
 * Add any notes from vendor to Digitization Notes field in DB record for a given file
-* Open local copy of preservation master file in WaveLab (TBD if this is really going to be our method) and run the Interstitial Error Check tool to search for possible digitization-related errors
+* Open vendor copy of preservation master file in WaveLab (TBD if this is really going to be our method) and run the Interstitial Error Check tool to search for possible digitization-related errors
 * Play through several seconds of beginning, middle, and end of file and look over waveform to check for any potential volume issues (periods of low or too-high volume, etc.)
 * Add QC notes to DB record for recording
 * Once each file has been verified to correspond to an existing database record, rename the local preservation master files to include the database record ID for later metadata matching
