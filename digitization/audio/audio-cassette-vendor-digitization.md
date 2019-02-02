@@ -13,10 +13,10 @@ Tapes will be pulled in 3 batches for digitization at MediaPreserve. Their  ship
   * Make sure that each record for a given tape number matches the data on the tape label
   * Look for release form by date in the paper folders
   * Check the `PermissionsLegacy` and `Permissions` fields for a tape record and update as needed based on the paper form:
-    * 1 = “Do not record” (there shouldn’e be a tape at all)
-    * 2 = “analog partial permissions”
-    * 3 = “analog full permissions”
-	  * In this case also update the `Permissions` drop down to be “Online plus in-house full access”
+    * 1 = "Do not record" (there shouldn'e be a tape at all)
+    * 2 = "analog partial permissions"
+    * 3 = "analog full permissions"
+	  * In this case also update the `Permissions` drop down to be "Online plus in-house full access"
   * Enter or correct data that is missing or wrong
   * Enter date shipped for digitization
   * Enter MediaPreserve as Digitizer
