@@ -28,10 +28,10 @@ Tapes will be pulled in 3 batches for digitization at MediaPreserve. Their  ship
 
 
 ## Receiving tapes & files
-Tapes will be received in the same batches as they were originally shipped. 
+Tapes will be received in the same batches as they were originally shipped.
 
 * Check that tapes returned match those on the original shipping manifest
-* Check that each cassette and case match 
+* Check that each cassette and case match
 * Mount hard drive received from vendor as read-only
   * Check that file names received from vendor match object IDs specified on manifest
     * Manifest specifies an A-side filename for each tape
@@ -49,7 +49,7 @@ Tapes will be received in the same batches as they were originally shipped.
 ## QC
 * Run preservation master files against MediaConch policy (TBD..)
   * note any discrepancies and contact vendor immediately in cases where a transfer was not made with correct specs
-* Add any notes from vendor to Digitization Notes field in DB record for a given file
+* Add vendor comments from xml file to Digitization Notes field in DB record for a given file
 * Open vendor copy of preservation master file in WaveLab (TBD if this is really going to be our method) and run the Interstitial Error Check tool to search for possible digitization-related errors
 * Play through several seconds of beginning, middle, and end of file and look over waveform to check for any potential volume issues (periods of low or too-high volume, etc.)
 * Add QC notes to DB record for recording
