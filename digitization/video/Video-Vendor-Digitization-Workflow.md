@@ -1,13 +1,13 @@
-In-Progress Document
+# In-Progress Document
 
-Receipt of Drives
+## Receipt of Drives
 
 Check that all tapes were digitized and titles received by comparing folder file names to object identifiers in FileMaker export.
 If receiving multiple drives, label each drive with the files (i.e. range of object IDs) on each drive.
 Check all checksums using md5 tool. Flag any files with checksum failures.
 
 
-QC
+## QC
 
 Mount hard drive as read only.
 Terminal commands:
@@ -23,6 +23,7 @@ Check that all file states (e.g. uncompressed preservation master, access H264, 
 
 Find correlating record in FileMaker database.
 Under Technical Details tab, add relevant data re: Sound Characteristics, Color Characteristics, and Running Time. (Anything else?)
+
 Under In-house Comments tab, copy over any vendor notes from vendor’s xml metadata. (E.g. Item # 16134 from Media Preserve: “Aligned Playback Level to program; Aligned Audio Level to program; Flagging visible in picture; Unstable Control Track; Channel2 Silent; Channel2 Mono”)
 
 Play preservation files in Adobe Premiere, at least 90 seconds at beginning, middle, and end of recordings. Slowly scrub file back and forth (approx. 1 minute).
@@ -36,7 +37,7 @@ Notes about content: significant personages, events, locations, or discrepancies
 Should we do any QC for H264 access files or ProRes files - or not if we’re not actually keeping those files?
 MCQ Suggestion: Just ensure they are complete and correctly identified (i.e. useful for quick access).
 
-After QC
+## After QC
 
 For files flagged for possible image/audio correction: Conversation needed with Dave
 For files with possible digital artifacts introduced in transfer or other problems requiring vendor attention: Flag to contact vendor for review. Still ingest as is?
